@@ -1,0 +1,26 @@
+.combination {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  padding: var(--gutter) 0 0;
+  z-index: 1;
+
+  ::placeholder {
+    color: #ddd;
+  }
+
+  .characters-list {
+    .has-failed & {
+      animation: shakeX 1s;
+    }
+  }
+
+  .character {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    width: 1em;
+    border: solid 1px currentColor;
+  }
+}
