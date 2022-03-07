@@ -11,16 +11,19 @@
   }
 
   .characters-list {
+    font-size: min(55px, 7vw);
+    letter-spacing: max(-0.75vw, -8px);
+
     .has-failed & {
       animation: shakeX 1s;
     }
   }
 
   .character {
-    font-size: 3em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
-    width: 1em;
+    width: 1.2em;
     border: solid 1px currentColor;
   }
 }
